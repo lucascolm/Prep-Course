@@ -37,9 +37,9 @@ function forEach(array, cb) {
   // Itera sobre la matriz "array" y pasa los valores al callback uno por uno
   // Pista: Estarás invocando a `cb` varias veces (una por cada valor en la matriz)
   //Tu código:
-  for(let i=0;i<array.length;i++){
-    cb(array[i]);
-  }
+  array.forEach(function(e,index){
+    cb(e);
+  });
 }
 
 function map(array, cb) {
@@ -70,7 +70,7 @@ function filter(array) {
   //Tu código:
   var nuevoarray=[];
     for(let i=0;i<array.length;i++){
-      if(array[i][0]=== "a";{
+      if(array[i][0]=== "a"){
         nuevoarray.push(array[i]);
       }
     }
